@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hideElement {
+    display: none;
+  }
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+nav{
+    position: relative;
+}
+.widget-max{
+    top: -17px !important;
+    margin-left: 50%;
+    width: 60%;
+    height: 113% !important;
+}
+.text-format-menu{
+    background-color: #0277bd;
+    padding: 11px 0 15px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+.profile-sidenav{
+    margin: 35px 0px 35px 20px;
+}
+.profile-photo{
+    width: 20%;
+    height: 20%;
+    border-radius: 150px;
+    float: left;
+}
+.text-format-profile{
+    margin-left: 70px;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+}
+.main-navigation{
+    background-color: rgba(0,0,0,0.2);
+}
+.text-main-navigation{
+    font-style: bold;
+    color: #0277bd;
+    margin: 20px;
+    text-transform: uppercase;
+}
+.main-navigation-list{
+    background-color: rgba(0,0,0,0.05);
+}
+.text-collapsible-list{
+    font-style: bold;
+    margin-left: 20px;
+    color: #ffffff !important;
+}
+.icon-color-right{
+    color: #ffffff !important;
+}
+.icon-color{
+    float: right !important;
+    color: #ffffff !important;
+    margin-left: 70px;
+}
+.collapsible-body-list{
+    background-color:#424242 !important;
+}
+.main-container{
+    margin-left: 50px;
+    width: 85%;
+    max-width: 1280px;
+}
+.main-title{
+    margin: 40px 0;
+}
+h4{
+        color: #424242;
+}
+h4 span{
+    font-size: 20px;
+    color: #616161;
+}
+h5{
+    color: #424242;
+}
+.global-card{
+    margin: 5px;
+    display: inline-block;
+}
+
+.total-card{
+    position: relative;
+    display: inline-block;
+}
+.icon-pos-card{
+    margin-left: 65%;
+    margin-top:10%;
+   
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px !important;
+    color: #ffffff;
+    position: absolute;
+    width: 80% !important;
+    border-bottom: none !important;
+    top: 25px;
+    left: 15px;
+}
+
+.card-value{
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 15px;
+}
+.card-info{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 995px) {
+    .hide-medium {
+      display: none !important;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .main-container{
+    margin: auto;
+    }
+    .row .col.s6 {
+        width: 75% !important;
+    }
+    .row .col.offset-s3 {
+        margin-left: 13% !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sidenav{
+      width: 260px !important;
+      }
+  }

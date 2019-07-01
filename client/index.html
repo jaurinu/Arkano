@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-fixed light-blue darken-3 ">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">e-Ventas</a>
+                <a class="weatherwidget-io widget-max hide-medium" href="https://forecast7.com/en/19d43n99d13/mexico-city/" data-label_1="MEXICO CITY" data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="original" data-basecolor="#0277bd" >MEXICO CITY WEATHER</a>
+                <!-- <div id="openweathermap-widget-19"></div> -->
+                <a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons white-text">menu</i></a>
+            </div>
+
+</nav>
+</header>
+<div class="row">
+    
+    <div class="col s12 m4 l3">
+        
+        <div class="sidenav sidenav-fixed grey darken-3 over" id="sidenav-left">
+            <h4 class="text-format-menu">e-Ventas</h4>
+            <div class="profile-sidenav">
+                <img src="./assets/profile_photo.jpg" alt='profile-photo' class="profile-photo"/>
+                <div>
+                    <span class="text-format-profile">Name</span>
+                    <span class="text-format-profile">Status</span>
+                </div>
+            </div>
+            <li class="main-navigation"><span class="text-main-navigation">Main Navigation</span></li>
+            <ul class="collapsible" data-collapsible="expandable">
+                <li class="main-navigation-list ">
+                    <div class="collapsible-header">
+                        <i class="material-icons icon-color-right">dashboard</i>
+                        <a class="text-collapsible-list">
+                        Dashboard
+                        <i class="material-icons chevron icon-color">chevron_left</i>
+                        </a>
+                    </div>
+                    <div id="button-form" class="collapsible-body collapsible-body-list waves-effect active"><a href="#form" class="text-collapsible-list">Formulario</a></div>
+                    <div id="button-statistics" class="collapsible-body collapsible-body-list waves-effect active"><a href="#statistics" class="text-collapsible-list">Estadísticas</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+                
+                <div class="col s12 m12 l9">                
+                    <div class="main-container" >
+                    <div id="form" class="hideElement">
+                        <article class="main-title">
+                            <h4 class="left-align">Dashboard
+                                <span>Formulario</span>
+                            </h4>
+                        </article>
+                        <article>
+                            <h5 class="center-align">Datos en Dashboard</h5>
+                        </article>
+                        <div class="col s6 offset-s3">
+                                <form method="POST" id='dashboard-form'>
+                                    <div class="input-field">
+                                        <label for="new-purchases">Nuevas compras</label>
+                                        <input type="number" name="new-buys" id="new-purchases" >Cantidad de nuevas compras
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="increment">% Incremento de Compras</label>
+                                        <input type="number" name="increment" id="increment" >Incremento de Compras
+                                    </div>
+                                    
+                                    <div class="input-field">
+                                        <label for="new-users">Nuevos Usuarios</label>
+                                        <input type="number" name="new-users" id="new-users" >Cantidad Nuevos Usuarios
+                                    </div>
+                                    
+                                    <div class="input-field">
+                                        <label for="new-visits">Nuevas Visitas</label>
+                                        <input type="number" name="new-visits" id="new-visits" >Cantidad Nuevas Visitas
+                                    </div>
+                                    
+                                    <p class="center-align">
+                                        <button class="waves-effect waves-light btn light-blue darken-3" type="submit" ><i class="material-icons right">send</i>Ingresar Datos</button>
+                                    </p>
+                                    
+                                </form>
+                        </div>
+                    </div>
+                        
+                        <div id='statistics-section' class="hideElement">
+                            <div class="row">
+                                <div class="col s12 m8 l9" id="statistics">
+                                    <article class="main-title">
+                                        <h4 class="left-align">Dashboard
+                                            <span>Estadísticas</span>
+                                        </h4>
+                                    </article>
+                                </div>
+                            </div>                       
+                            <div id='dashboard-cards'>
+                                <div class="col l3 m6 s12" >
+                                    <div class="card light-blue lighten-2">                                      
+                                <img src="./assets/bolsa-de-compras.png" alt='purchases-icon' class="icon-pos-card">
+                                <input class="card-title" id="purchases-card">
+                                <div class="card-value">Nuevas Compras</div>                                        
+                                <div class="card card-info light-blue center-align">Mas info</div>
+                            </div>
+                        </div>
+                        <div class="col l3 m6 s12" >
+                            <div class="card green darken-1">                                      
+                                <img src="./assets/gráfico-combinado.png" alt='increment-icon' class="icon-pos-card">
+                                <input class="card-title" id="increment-card">
+                                <div class="card-value">Incremento de Compras</div>                                        
+                                <div class="card card-info green darken-2 center-align">Mas info</div>
+                            </div>
+                        </div>
+                        <div class="col l3 m6 s12" >
+                            <div class="card orange">                                      
+                                <img src="./assets/añadir-usuario.png" alt='users-icon' class="icon-pos-card">
+                                <input class="card-title" id="users-card">
+                            <div class="card-value">Nuevos Usuarios</div>                                        
+                            <div class="card card-info orange darken-1 center-align">Mas info</div>
+                        </div>
+                    </div>
+                    <div class="col l3 m6 s12" >
+                        <div class="card red darken-1">                                      
+                            <img src="./assets/gráfico-circular.png" alt='visits-icon' class="icon-pos-card">
+                            <input class="card-title" id="visits-card">
+                            <div class="card-value">Nuevas Visitas</div>                                        
+                            <div class="card card-info red darken-2 center-align">Mas info</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <script src='main.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 19,cityid: '4398103',appid: '8825ead15727c2c42c7fd6a7f3c538ca',units: 'metric',containerid: 'openweathermap-widget-19',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script> -->
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
