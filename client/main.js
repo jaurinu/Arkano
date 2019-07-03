@@ -14,7 +14,7 @@ buttonStatistics.addEventListener('click', ()=>{
 })
 
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8825ead15727c2c42c7fd6a7f3c538ca}'
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8825ead15727c2c42c7fd6a7f3c538ca}'
 console.log(url)
 const fetchWidget = async() => {
   const res = await fetch(url)
