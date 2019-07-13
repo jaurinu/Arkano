@@ -26,13 +26,13 @@ console.log(url)
 //  weatherWidget()
 
 
-const fetchWidget = () => {
-fetch(url)
- .then(response => response.json())
- .then(dataWeather => {
-  console.log(fetchWidget);
-  });
- };
+// const fetchWidget = () => {
+// fetch(url)
+//  .then(response => response.json())
+//  .then(dataWeather => {
+//   console.log(fetchWidget);
+//   });
+//  };
 
 
 console.log(url)
