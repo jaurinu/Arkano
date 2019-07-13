@@ -15,22 +15,25 @@ buttonStatistics.addEventListener('click', ()=>{
 
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1cbe1fb2ff4204ca59d47e7383de4031}'
-const fetchWidget = () => {
-fetch(url)
- .then(response => response.json())
- .then(dataWeather => {
-  console.log(fetchWidget);
-  });
- };
+console.log(url)
+// const weatherWidget = () => {
+// fetch(url)
+//  .then(response => response.json())
+//  .then(dataWidget => {
+//   console.log(dataWidget);
+//   });
+//  };
+//  weatherWidget()
 
 
-//console.log(url)
-//const fetchWidget = async() => {
-  //const res = await fetch(url)
-  //const data = await res.json()
-  //console.log(data)
-//}
-//fetchWidget();
+
+console.log(url)
+const fetchWidget = async() => {
+  const res = await fetch(url)
+  const data = await res.json()
+  console.log(data)
+}
+fetchWidget();
 
 
 document.getElementById('dashboard-form')
