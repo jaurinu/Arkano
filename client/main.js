@@ -25,6 +25,14 @@ console.log(url)
 //  };
 //  weatherWidget()
 
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1cbe1fb2ff4204ca59d47e7383de4031}'
+const fetchWidget = () => {
+fetch(url)
+ .then(response => response.json())
+ .then(dataWeather => {
+  console.log(fetchWidget);
+  });
+ };
 
 
 console.log(url)
